@@ -1,0 +1,109 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+    --font: "Figtree", sans-serif;
+
+    /* font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500, 800;
+    font-style: normal; */
+}
+
+body{
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17vh;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: white;
+    height: auto;
+    width: 380px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 0 var(--Gray950);
+    border-radius: 20px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.image img{
+    border-radius: 10px;
+}
+
+.learning{
+    background-color: var(--Yellow);
+    width: 80px;
+    margin-left: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+.learning h5{
+    padding: 8px;
+    font-family: var(--font);
+    font-weight: 800;
+}
+
+.par1 p{
+    font-size: 16px;
+    margin-left: 25px;
+    font-family: var(--font);
+    font-weight: 500;
+}
+
+.par2 p{
+    font-size: 16px;
+    margin-left: 25px;
+    font-family: var(--font);
+    font-weight: 500;
+    color: var(--Gray500);
+    margin-bottom: 10px;
+}
+
+h2{
+    margin: 0 0 0 25px;
+    margin-left: 25px;
+    font-family: var(--font);
+    font-weight: 800;
+}
+h2:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.auther{
+    display: flex;
+    /* background-color: red; */
+    margin: 0 0 10px 25px;
+    align-items: center;
+}
+.auther img{
+    height: 35px;
+    width: 35px;
+    padding: 0;
+}
+.auther h5{
+    margin-left: 10px;
+    font-family: var(--font);
+    font-weight: 800;
+}
+
+@media screen and (max-width:375px) {
+    body{
+        margin-top: 10vh;
+    }
+    .main{
+        width: 350px;
+    }
+    .image img{
+        width: 310px;
+        height: auto;
+    }
+}
